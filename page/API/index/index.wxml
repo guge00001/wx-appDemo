@@ -5,7 +5,7 @@
   </view>
 
   <view class="menu-list">
-    <block wx:for="{{menuList}}" wx:for-item="menuItem">
+    <block wx:for="{{menuList}}" wx:key wx:for-item="menuItem">
       <view class="menu-item">
         <view class="menu-item-main" id="{{index}}" bindtap="tapMenuItem">
           <text class="menu-item-name">{{menuItem.name}}</text>
